@@ -41,7 +41,7 @@ const Contact = () => {
                 >
                     Contact Me
                 </Typography>
-                <Grid  container spacing={5} alignContent={"center"} alignItems={"center"} display={'flex'} direction={'row'} wrap="wrap">
+                <Grid  container display={'flex'} justifyContent={'space-around'} direction={'row'} wrap="wrap">
                     <Grid item>
                         <Link href="https://github.com/QuillJoy" target="_blank">
                         <Card sx={{ width: 300, height: 300, backgroundColor:"indigo", color:'white' }}>
@@ -64,9 +64,21 @@ const Contact = () => {
                         </Card>
                         </Link>
                     </Grid>
-                    <Grid item align={"center"}>
-                        <Container maxWidth="xs">
-                        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                    <Grid item sx={{
+                        p:5, 
+                        backgroundColor: 'rgba(255, 255, 255, 1)', 
+                        borderRadius: 5, 
+                        mt: 5, 
+                        mb: 5,
+                        border:3,
+                        width: {
+                            xs: 250,
+                            sm: 300,
+                            md: 300,
+                            lg: 300,
+                            xl: 300, 
+                        }}}>
+                        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, justifyContent: 'center'}}>
                             <Grid container spacing={2}>
                             <Grid item xs={12} sm={12}>
                                 <TextField
@@ -120,8 +132,6 @@ const Contact = () => {
                             <Grid container justifyContent="flex-end">
                             </Grid>
                         </Box>
-
-                        </Container>
                     </Grid>
                     <Grid item>
                     <Link href="https://www.linkedin.com/in/john-quill/" target="_blank" >
@@ -131,7 +141,7 @@ const Contact = () => {
                             component="img"
                             sx={{
                                 objectFit: 'contain',
-                                height: '200px'
+                                height: '200px',
                             }}
                             image="/linkedin.webp"
                             alt="LinkedIn Logo"

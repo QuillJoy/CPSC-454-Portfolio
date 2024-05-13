@@ -28,10 +28,20 @@ const Experience = () => {
                 >
                     Experience
                 </Typography>
-                <Grid  container spacing={15} alignContent={"center"} alignItems={"center"} display={'flex'} direction={'row'} wrap="wrap">
+                <Grid  container spacing={5 }justifyContent={'space-around'} alignContent={'space-around'} display={'flex'} direction={'row'} wrap="wrap">
                     <Grid item>
                         <RouterLink to="suits">
-                        <Card sx={{ width: 300, height: 300, background: 'linear-gradient(#FFD700, #FFFFFF)' }}>
+                        <Card sx={{
+                            width: {
+                                xs: 250,
+                                sm: 300,
+                                md: 300,
+                                lg: 300,
+                                xl: 300, 
+                            }, 
+                            height: 300,
+                            background: 'linear-gradient(#FFD700, #FFFFFF)'
+                            }}>
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -53,7 +63,15 @@ const Experience = () => {
                     </Grid>
                     <Grid item>
                        <RouterLink to="intern">
-                        <Card sx={{ width: 300, height: 300, background: 'linear-gradient(#29E0D7, #FFFFFF)' }}>
+                        <Card sx={{
+                            width: {
+                                xs: 250,
+                                sm: 300,
+                                md: 300,
+                                lg: 300,
+                                xl: 300, 
+                            }, 
+                            height: 300, background: 'linear-gradient(#29E0D7, #FFFFFF)' }}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
@@ -76,7 +94,16 @@ const Experience = () => {
                     </Grid>
                     <Grid item>
                     <RouterLink to="student">
-                    <Card sx={{ width: 300, height: 300, background: 'linear-gradient(#111D4F, #FFFFFF)' }}>
+                    <Card sx={{
+                        width: {
+                            xs: 250,
+                            sm: 300,
+                            md: 300,
+                            lg: 300,
+                            xl: 300, 
+                        }, 
+                        height: 300,
+                        background: 'linear-gradient(#111D4F, #FFFFFF)' }}>
                         <CardActionArea>
                             <CardMedia
                             component="img"

@@ -1,5 +1,4 @@
-import Navbar from "../navbar/Navbar";
-import { Link } from "react-router-dom";
+import { alpha } from '@mui/material';
 import './About.css';
 import { Typography } from "@mui/material";
 import { Grid, Box } from '@mui/material';
@@ -26,7 +25,13 @@ const About = () => {
                     <Box
                     component="img"
                     sx={{
-                        height: 400,
+                        width: {
+                            xs: 300,
+                            sm: 400,
+                            md: 400,
+                            lg: 500,
+                            xl: 500, 
+                        }
                     }}
                     alt="Picture of me"
                     src="about.jpg"
@@ -34,9 +39,22 @@ const About = () => {
                     />
 
                 </Grid>
-                <Grid item>
-                    <Typography sx={{maxWidth: "sm"}} variant="body2" align="center" fontSize={20}>
-
+                <Grid item sx={{p:3, backgroundColor: 'rgba(255, 255, 255, 1)', borderRadius: 5, mt: 5, border:3}}>
+                    <Typography
+                    sx={{
+                        width: {
+                            xs: 300,
+                            sm: 400,
+                            md: 400,
+                            lg: 500,
+                            xl: 500, 
+                        }, 
+                    
+                    }}
+                    variant="body2"
+                    align="center"
+                    fontSize={20}
+                    >
                             Hello! I'm John Alfred Quilantang and welcome to my portfolio website.
                             I am currently majoring in my last year of Computer Science at 
                             California State University, Fullerton. I have experience that ranges
