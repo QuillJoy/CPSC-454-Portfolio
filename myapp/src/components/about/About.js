@@ -2,7 +2,11 @@ import { alpha } from '@mui/material';
 import './About.css';
 import { Typography } from "@mui/material";
 import { Grid, Box } from '@mui/material';
+import { useEffect } from 'react';
 const About = () => {
+    useEffect(() => {
+        document.title=`Portfolio: About`
+    })
     return ( 
         <div>
             <Grid container alignItems={"center"} display={'flex'} direction={'column'}>

@@ -3,7 +3,11 @@ import { Grid, Box } from '@mui/material';
 import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import { Link as RouterLink } from "react-router-dom";
+import { useEffect } from "react";
 const Suits = () => {
+    useEffect(() => {
+        document.title=`Experience: Software Design Lead`
+    })
     return ( 
         <div>
             <Grid alignContent={"center"} alignItems={"center"} display={'flex'} direction={'column'}>

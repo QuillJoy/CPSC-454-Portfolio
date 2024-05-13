@@ -8,12 +8,14 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Link from "@mui/material/Link";
 
-import { useState, } from "react";
+import { useState, useEffect} from "react";
 
 
 const Contact = () => {
     const [formData, setFormData] = useState({name: '',email : '', message: ''})
-
+    useEffect(() => {
+        document.title=`Contact Me`
+    })
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(formData)

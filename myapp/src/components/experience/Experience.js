@@ -11,8 +11,12 @@ import { Route, Routes } from 'react-router-dom';
 import Suits from "../suits/Suits";
 import Intern from "../intern/Intern";
 import Student from "../student/Student";
+import { useEffect } from "react";
 
 const Experience = () => {
+    useEffect(() => {
+        document.title=`Portfolio: Experience`
+    })
     return ( 
         <Container maxWidth="lg" alignContent="center">
             <Typography

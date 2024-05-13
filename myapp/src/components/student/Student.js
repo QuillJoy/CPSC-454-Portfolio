@@ -2,7 +2,11 @@ import { Typography } from "@mui/material";
 import { Grid, Box } from '@mui/material';
 import { Link as RouterLink } from "react-router-dom";
 import { Link, Button } from "@mui/material";
+import { useEffect } from "react";
 const Student = () => {
+    useEffect(() => {
+        document.title=`Experience: Computer Science Student`
+    })
     return ( 
         <div>
             <Grid alignContent={"center"} alignItems={"center"} display={'flex'} direction={'column'}>
