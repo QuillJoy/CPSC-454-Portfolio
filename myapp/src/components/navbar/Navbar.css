@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size:medium;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: goldenrod;
+}
+
+  
