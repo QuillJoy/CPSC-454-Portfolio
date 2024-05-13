@@ -28,7 +28,8 @@ const Experience = () => {
                 >
                     Experience
                 </Typography>
-                <Grid  container spacing={5 }justifyContent={'space-around'} alignContent={'space-around'} display={'flex'} direction={'row'} wrap="wrap">
+                <Grid  container spacing={5 }justifyContent={'space-around'} alignContent={'space-around'} display={'flex'} direction={'row'} wrap="wrap"
+                sx={{mt: 5}}>
                     <Grid item>
                         <RouterLink to="suits">
                         <Card sx={{
