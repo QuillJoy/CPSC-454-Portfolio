@@ -6,7 +6,7 @@ const Student = () => {
     return ( 
         <div>
             <Grid alignContent={"center"} alignItems={"center"} display={'flex'} direction={'column'}>
-            <Grid  container maxWidth="sm" display={'flex'} direction={'row'} justifyContent={"space-around"} >
+            <Grid  container maxWidth="sm" display={'flex'} direction={'row'} justifyContent={"space-around"} sx={{mt: 3}} >
                     <Grid item>
                         <RouterLink to="../experience/suits">
                         <Button
@@ -79,7 +79,7 @@ const Student = () => {
                     src="/exp-student.png"
                     />
                 </Grid>
-                <Grid item sx={{p:3, backgroundColor: 'rgba(255, 255, 255, 1)', borderRadius: 5, mt: 5, border:3}}>
+                <Grid item sx={{p:3, backgroundColor: 'rgba(255, 255, 255, 1)', borderRadius: 5, mt: 5, mb:5, border:3}}>
                     <Typography
                     sx={{
                         width: {

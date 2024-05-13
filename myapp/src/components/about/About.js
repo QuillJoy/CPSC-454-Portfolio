@@ -39,7 +39,7 @@ const About = () => {
                     />
 
                 </Grid>
-                <Grid item sx={{p:3, backgroundColor: 'rgba(255, 255, 255, 1)', borderRadius: 5, mt: 5, border:3}}>
+                <Grid item sx={{p:3, backgroundColor: 'rgba(255, 255, 255, 1)', borderRadius: 5, mt: 5, mb: 5, border:3}}>
                     <Typography
                     sx={{
                         width: {

@@ -7,7 +7,7 @@ const Suits = () => {
     return ( 
         <div>
             <Grid alignContent={"center"} alignItems={"center"} display={'flex'} direction={'column'}>
-                <Grid  container maxWidth="sm" display={'flex'} direction={'row'} justifyContent={"space-around"} >
+                <Grid  container maxWidth="sm" display={'flex'} direction={'row'} justifyContent={"space-around"} sx={{mt: 3}}>
                     <Grid item>
                         <RouterLink to="../experience/*">
                         <Button
@@ -144,7 +144,8 @@ const Suits = () => {
                             lg: 400,
                             xl: 400, 
                         },
-                        mt: 5
+                        mt: 5,
+                        mb: 5
                     }}
                     alt="gif of our software"
                     src="/Animation.gif"
